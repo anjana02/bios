@@ -1,9 +1,6 @@
-palindromeStirng="SOS"
-
-rav=$(echo $palindromeStirng | rev)
-
-if [[ $rav == $palindromeStirng ]];then
-    echo "String is palindrome"
-else
-    echo "String is not palindrome"
-fi
+read -p "Enter a string: " string
+if [[ $string|rev == $string ]]; then
+    echo "String is Palindrome"
+ else
+    echo"String is not palindrome"
+fi  
