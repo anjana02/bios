@@ -1,15 +1,12 @@
-#! /usr/bin/env bash 
-factorial()
-{
-NUM=$1
-echo $NUM
-FACT=1
-while [ $NUM -gt 1 ];do
-    FACT=$(($FACT * $NUM))
-    NUM=$(($NUM - 1))
-done
-echo $FACT
-return $(($FACT))
-}
+echo "Enter number: "
+read num
 
-factorial 10
+fact=1
+
+while [ $num -gt 1 ]
+do
+  fact=$((fact * num))
+  num=$((num - 1))    
+done
+
+echo $fact
