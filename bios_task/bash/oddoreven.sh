@@ -1,11 +1,11 @@
 echo -n "Enter numnber : "
-read n
+read num
  
-rem=$(( $n % 2 ))
+rem=$(( $num % 2 ))
  
 if [ $rem -eq 0 ]
 then
-  echo "$n is even"
+  echo "$num is even"
 else
-  echo "$n is odd"
+  echo "$num is odd"
 fi
