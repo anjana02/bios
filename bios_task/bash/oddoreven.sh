@@ -1,5 +1,5 @@
 echo -n "Enter numnber : "
-read num
+read n
  
 rem=$(( $n % 2 ))
  
