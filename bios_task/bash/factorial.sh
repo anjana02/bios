@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "Enter number: "
 read num
 
