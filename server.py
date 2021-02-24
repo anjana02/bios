@@ -12,4 +12,13 @@ def server():
         data = conn.recv(1024).decode()
         if not data:
             break
-        server()
+        data = str(data)
+        data = cryptocode.decrypt(data, "mysecret")
+        print("User: " + str(data))
+        data = input(' -> ')
+        data = cryptocode.encrypt(data, "mysecret")
+        conn.send(data.encode()) 
+    conn.close()
+if __name__ == '__main__':
+    server()
+         
