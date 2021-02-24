@@ -15,7 +15,7 @@ def server():
         data = str(data)
         data = cryptocode.decrypt(data, "mysecret")
         print("User: " + str(data))
-        data = input(' -> ')
+        data = input(' > ')
         data = cryptocode.encrypt(data, "mysecret")
         conn.send(data.encode()) 
     conn.close()
