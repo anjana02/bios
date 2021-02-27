@@ -2,7 +2,7 @@ import socket
 import cryptocode
 import hmac
 import hashlib
-digest_maker = hmac.new(b'secret-key', b'msg', hashlib.sha512)
+digest_maker = hmac.new(b'secret-key', b'msg', hashlib.sha1)
 print ("Hexdigest: " + digest_maker.hexdigest())
 digest_maker.update(b'another msg')
 print ("Hexdigest after update: " + digest_maker.hexdigest())
